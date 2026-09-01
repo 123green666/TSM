@@ -1,8 +1,10 @@
 # TSM: Temporal Semantic Memory
 
+[![CI](https://github.com/cosmicexotic/TSM/actions/workflows/ci.yml/badge.svg)](https://github.com/cosmicexotic/TSM/actions/workflows/ci.yml)
+
 TSM is a research implementation of temporal semantic memory for long-horizon conversational question answering. This public release contains the complete temporal/snapshot path, four declared ablations, public OpenAI-compatible providers, and reproducibility tooling for LongMemEval and LoCoMo.
 
-Status: `0.1.0`. Level 1 offline reproducibility is verified. No live API-backed benchmark run has been performed for this public release, and benchmark scores are intentionally not claimed here until all 10 public-backend configurations have been rerun.
+Status: `0.1.1`. Level 1 offline reproducibility is verified. No live API-backed benchmark run has been performed for this public release, and benchmark scores are intentionally not claimed here until all 10 public-backend configurations have been rerun.
 
 ## Provenance
 

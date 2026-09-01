@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use TSM, please cite this software and the associated paper when available."
 title: "TSM: Temporal Semantic Memory"
 type: software
-version: 0.1.0
+version: 0.1.1
 date-released: 2026-09-01
 license: MIT
 authors:

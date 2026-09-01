@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tsm-memory"
-version = "0.1.0"
+version = "0.1.1"
 description = "Temporal Semantic Memory for long-horizon conversational question answering"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
@@ -33,6 +33,7 @@ dependencies = [
   "openai>=1.91,<3",
   "scikit-learn>=1.6,<2",
   "spacy>=3.8,<4",
+  "click>=8,<9",
   "nest-asyncio>=1.6,<2",
   "python-dateutil>=2.9,<3",
   "dateparser>=1.4,<2",

@@ -24,7 +24,7 @@ No live paid API request was made for this release. Levels 2 and 3 remain pendin
 ## Fixed release contract
 
 - Python: 3.11.
-- TSM version: `0.1.0`.
+- TSM version: `0.1.1`.
 - Graphiti: `graphiti-core==0.19.0`.
 - Neo4j image: `neo4j:5.26-community`.
 - Random seeds in clustering code: `42`; legacy retriever seed: `1`.
