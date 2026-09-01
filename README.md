@@ -123,6 +123,34 @@ main.py                  non-temporal and ablation entrypoint
 
 ## Citation
 
-Use [CITATION.cff](CITATION.cff) and cite the associated paper:
+Copy the official ACL Anthology entry below into your `.bib` file. The same entry is available as [CITATION.bib](CITATION.bib); GitHub citation metadata is provided in [CITATION.cff](CITATION.cff).
 
-> Miao Su, Yucan Guo, Zhongni Hou, Long Bai, Zixuan Li, Yufei Zhang, Guojun Yin, Wei Lin, Xiaolong Jin, Jiafeng Guo, and Xueqi Cheng. 2026. Beyond Dialogue Time: Temporal Semantic Memory for Personalized LLM Agents. Findings of ACL 2026, pages 29935–29951. DOI: [10.18653/v1/2026.findings-acl.1496](https://doi.org/10.18653/v1/2026.findings-acl.1496).
+```bibtex
+@inproceedings{su-etal-2026-beyond,
+    title = "Beyond Dialogue Time: Temporal Semantic Memory for Personalized {LLM} Agents",
+    author = "Su, Miao  and
+      Guo, Yucan  and
+      Hou, Zhongni  and
+      Bai, Long  and
+      Li, Zixuan  and
+      Zhang, Yufei  and
+      Yin, Guojun  and
+      Lin, Wei  and
+      Jin, Xiaolong  and
+      Guo, Jiafeng  and
+      Cheng, Xueqi",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1496/",
+    doi = "10.18653/v1/2026.findings-acl.1496",
+    pages = "29935--29951",
+    ISBN = "979-8-89176-395-1"
+}
+```
