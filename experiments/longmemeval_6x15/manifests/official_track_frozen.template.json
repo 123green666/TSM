@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "track": "official-reproduction",
+  "frozen": false,
+  "freeze_gate": "Do not create or run the diagnostic track until all 90 question IDs have a final passed or failed status and this record is frozen.",
+  "upstream_commit": "0da3633ba8e27e9f8122872ff775587116948f5e",
+  "experiment_commit": null,
+  "config_sha256": null,
+  "source_dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "question_manifest_sha256": null,
+  "llm_model": null,
+  "embedding_model": "bge-m3",
+  "embedding_dimension": 1024,
+  "frozen_at_utc": null,
+  "counts": {
+    "planned": 90,
+    "passed": null,
+    "failed": null
+  },
+  "run_manifest_paths": [],
+  "notes": []
+}

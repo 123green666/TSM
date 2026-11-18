@@ -1,0 +1,57 @@
+experiment:
+  name: longmemeval_tsm_official_6x15_4090_bgem3
+  method: tsm
+  entrypoint: main_time.py
+dataset:
+  dataset_name: LongMemEval
+  dataset_path: data/longmemeval/longmemeval_s_6x15_seed20261116.json
+cluster: {length: 1000, overlap: 200, merge_num: 3}
+language: en
+llm:
+  api_model: qwen3-8b-tsm
+  max_tokens: 8192
+  temperature: 0
+  api_key_env: OPENAI_API_KEY
+embedding:
+  backend: openai_compatible
+  model: bge-m3
+  dimension: 1024
+  batch_size: 48
+  api_key_env: OPENAI_API_KEY
+paths:
+  log_path: outputs/longmemeval/official_6x15/logs
+  answer_path: outputs/longmemeval/official_6x15/answers
+  cache_path: outputs/longmemeval/official_6x15/cache
+resume: {resumeIndex: 0, start_index: 0}
+retriever:
+  kwargs:
+    enable_dense_retrieval: true
+    prebuilt_index: true
+    embedder: PublicEmbedder
+    embedding_batch_size: 48
+    shortest_path_k: 4
+    max_chunk_setting: 20
+    enable_temporal_filter: true
+    chunks_only: false
+    use_gpu_faiss: false
+split_method: round_based
+temporal: {enable: false}
+extraction: {method: graphiti}
+graphiti:
+  neo4j:
+    uri_env: NEO4J_URI
+    user_env: NEO4J_USER
+    password_env: NEO4J_PASSWORD
+    database_env: NEO4J_DATABASE
+    uri: bolt://localhost:7687
+    user: neo4j
+    database: neo4j
+  group_id_prefix: lme6x15_official_
+  reset_group: true
+entity_clustering: {enable: true, threshold: 0.1}
+use_user_only: true
+parallel_api_calls: 2
+batch_size: 2
+use_batch_api: false
+llm_parallel: {enable_parallel: true, max_parallel_llm: 2, llm_retry_count: 3, llm_timeout: 900}
+use_improved_paths: false
